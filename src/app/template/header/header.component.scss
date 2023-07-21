@@ -1,0 +1,69 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    font-size: 48px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: cadetblue;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  a:hover {
+    background-color: #0056b3;
+  }
+  
+  button {
+    padding: 12px 24px;
+    background-color: plum;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  button:hover {
+    background-color: cadetblue;
+  }
+  
+  /* Nueva regla para centrar los botones */
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* pagina-principal.component.scss */
+
+.app-header {
+    background-color: azure;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+  }
+
+  

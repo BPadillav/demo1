@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #007bff; /* Cambio el color del borde */
+  border-radius: 10px;
+
+  .example-full-width {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+
+    input {
+      font-size: 16px;
+      color: beige;
+      padding: 10px;
+      border: 2px solid #cccccc;
+      border-radius: 8px;
+      transition: border-color 0.3s ease;
+
+      &:focus {
+        outline: none;
+        border-color: #cd0781;
+        box-shadow: 0 0 5px rgba(5, 118, 238, 0.5);
+      }
+    }
+
+    mat-label {
+      font-size: 14px;
+      color: beige;
+    }
+  }
+
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Agrego transición a transform */
+
+    &:hover {
+      background-color: palevioletred;
+    }
+
+    &:active {
+      transform: scale(0.98); /* Efecto de escala al hacer clic */
+    }
+  }
+}
+
+/* Efecto de sombra cuando el formulario está enfocado */
+.container:focus-within {
+  box-shadow: 0 0 10px rgba(217, 16, 194, 0.3);
+}

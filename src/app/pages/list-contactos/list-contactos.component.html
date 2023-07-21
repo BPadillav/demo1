@@ -1,0 +1,19 @@
+<span *ngIf="listadoContactos.length == 0">
+    No existen contactos
+</span>
+
+<ul>
+   
+
+    <hr/>
+    <li *ngFor="let contacto of listadoContactosFire | async">
+        <a (click)="editar(contacto)">{{contacto.cedula}} | {{contacto.nombre}} | {{contacto.direccion}}</a>
+        <a href="" (click)="eliminar(contacto)">Eliminar</a>
+    </li>
+
+    <hr/>
+    <li *ngFor="let contacto of listadoContactosWS | async">
+        <a (click)="editar(contacto)">{{contacto.cedula}} | {{contacto.nombre}} | {{contacto.direccion}}</a>
+        <button (click)="eliminar(contacto.cedula)">Eliminar</button>    </li>
+    
+</ul>
